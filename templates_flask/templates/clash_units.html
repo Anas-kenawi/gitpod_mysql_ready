@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Clash Units</title>
+  </head>
+<title>CLASH ROYALE</title>
+  <body>
+     <img src="../static/image/CR.png" alt="Archers" width="400">
+     {% for item in units %}
+      <p>
+          Unit name: {{ item[0] }}
+      </p>
+      <img src="../static/image/{{item[0]}}.png" alt="{{item[0]}}" width="200">
+      {% endfor %}
+    </body>
+</html>
